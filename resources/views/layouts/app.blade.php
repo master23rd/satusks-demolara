@@ -45,11 +45,14 @@
         $(function() {
 
             var table = $('.data-table').DataTable({
-                processing: true
+                order: [
+                    [0, 'desc']
+                ]
+                , processing: true
                 , serverSide: true
                 , ajax: "{{ route('scorecard.list') }}"
                 , columns: [{
-                        data: 'id'
+                        data: 'DT_RowIndex'
                         , name: 'id'
                     }
                     , {
@@ -58,16 +61,16 @@
                     }
                     , {
                         data: 'phone_number'
-                        , name: 'phone number'
+                        , name: 'phone_number'
                     }
 
                     , {
                         data: 'created_at'
-                        , name: 'created at'
+                        , name: 'created_at'
                     }
                     , {
                         data: 'score_pdf'
-                        , name: 'score pdf'
+                        , name: 'score_pdf'
                     }
                     , {
                         data: 'action'

@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Post One</title>
+    <title>Satusks.id</title>
 </head>
 <body id="home">
     <!-- navbar / header secion (flex) -->
     <div id="navbar" class="navbar top">
         <!-- logo section (left side)-->
         <h3 class="logo">
-            <span class="text-primary">
-                <!-- <i class="fas fa-book-open"></i> -->
-                <img src="./images/asset/Putih - Submark 2.png" alt="" style="width: 40px" />
-            </span>
-            satusks.id
+            <a class="logo-icon" href="{{route('home')}}">
+
+                <span class="text-primary">
+                    <!-- <i class="fas fa-book-open"></i> -->
+                    <img src="./images/asset/Putih - Submark 2.png" alt="" style="width: 40px" />
+                </span>
+                satusks.id
+
+            </a>
         </h3>
         <!-- navigation (rightside)-->
         <nav>
@@ -45,10 +49,6 @@
                 Scorecard memilih jurusan kuliah yang tepat, Navigating Your Future
                 Workshop Desember 2023
             </h1>
-            <!-- <p class="meta">
-          <i class="fas fa-user"></i> Posted by <strong> Jane Doe</strong> | 19
-          Desember 2023
-            </p> -->
             <p>
                 Halo, terima kasih telah menaruh minat untuk mengikuti Workshop
                 Navigating Your Future, Workshop untuk menentukan jurusan dan kampus.
@@ -91,12 +91,12 @@
                     <form action="#" class="callback-form" id="contact_form">
                         <div class="form-control">
                             <label for="name">Nama</label>
-                            <input type="text" name="name" id="name" placeholder="masukan nama" class="solid" />
+                            <input type="text" name="name" id="name" placeholder="masukan nama" class="solid" required />
                         </div>
                         <div class="form-control">
                             <label for="phone">Nomor WA (opsional) untuk dikirimkan hasil score card yang
                                 lebih komprehensif (nomor WA dijamin keamanannya)</label>
-                            <input type="text" name="name" id="wa_number" placeholder="masukan kontak whatsapp" class="solid" />
+                            <input type="number" name="name" id="wa_number" placeholder="masukan kontak whatsapp" class="solid" required />
                         </div>
                         <input type="submit" value="Mulai Scorecard" class="btn btn-primary" />
                     </form>

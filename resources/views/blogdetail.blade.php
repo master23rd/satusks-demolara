@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Post One</title>
+    <title>Satusks.id</title>
 </head>
 <body id="home">
     <!-- navbar / header secion (flex) -->
     <div id="navbar" class="navbar top">
         <!-- logo section (left side)-->
         <h3 class="logo">
-            <span class="text-primary">
-                <!-- <i class="fas fa-book-open"></i> -->
-                <img src="./images/asset/Putih - Submark 2.png" alt="" style="width: 40px" />
-            </span>
-            satusks.id
+            <a class="logo-icon" href="{{route('home')}}">
+
+                <span class="text-primary">
+                    <!-- <i class="fas fa-book-open"></i> -->
+                    <img src="./images/asset/Putih - Submark 2.png" alt="" style="width: 40px" />
+                </span>
+                satusks.id
+
+            </a>
         </h3>
         <!-- navigation (rightside)-->
         <nav>

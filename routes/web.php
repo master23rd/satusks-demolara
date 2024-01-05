@@ -29,6 +29,7 @@ Route::get('/artikel-test', function(){
 })->name('blog-detail');
 // scorecard
 Route::get('scorecard', [ScorecardController::class, 'scorecardForm'])->name('scorecard');
+Route::post('store-scorecard',[ScorecardController::class, 'storeScorecard'])->name('store_scorecard');
 Route::post('generated-pdf',[ScorecardController::class, 'generatePDF'])->name('generated_pdf');
 
 // admin

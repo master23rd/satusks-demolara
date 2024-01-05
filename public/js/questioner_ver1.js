@@ -226,6 +226,7 @@
   const welcome = document.getElementById('welcome')
   const contactResult = document.getElementById('contact')
   const contactForm = document.getElementById('contact_form')
+
   const myQuestions = [
     {
       section: 'Minat & Bakat',

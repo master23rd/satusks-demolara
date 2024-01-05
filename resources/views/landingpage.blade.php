@@ -15,11 +15,15 @@
     <div id="navbar" class="navbar top">
         <!-- logo section (left side)-->
         <h3 class="logo">
-            <span class="text-primary">
-                <!-- <i class="fas fa-book-open"></i> -->
-                <img src="./images/asset/Putih - Submark 2.png" alt="" style="width: 40px" />
-            </span>
-            satusks.id
+            <a class="logo-icon" href="{{route('home')}}">
+
+                <span class="text-primary">
+                    <!-- <i class="fas fa-book-open"></i> -->
+                    <img src="./images/asset/Putih - Submark 2.png" alt="" style="width: 40px" />
+                </span>
+                satusks.id
+
+            </a>
         </h3>
         <!-- navigation (rightside)-->
         <nav>
@@ -315,7 +319,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                             eu nunc in justo tempus varius. Pellentesque id ultricies ex...
                         </p>
-                        <a href="post.html" class="btn-highlight-nonoutline">
+                        <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
                             Read More >
                         </a>
                     </div>
@@ -328,7 +332,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                             eu nunc in justo tempus varius. Pellentesque id ultricies ex...
                         </p>
-                        <a href="post.html" class="btn-highlight-nonoutline">
+                        <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
                             Read More >
                         </a>
                     </div>
@@ -341,7 +345,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                             eu nunc in justo tempus varius. Pellentesque id ultricies ex...
                         </p>
-                        <a href="post.html" class="btn-highlight-nonoutline">
+                        <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
                             Read More >
                         </a>
                     </div>
@@ -357,8 +361,8 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="column-2">
-                        <img src="images/asset/Group 782.png" style="object-fit: contain" alt="" />
+                    <div class="column-2" style="align-items:flex-end;">
+                        <img src="images/asset/Group 782.png" style="object-fit: contain" alt="" id="motivation-image" />
                     </div>
                 </div>
             </div>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    {{-- <link rel="stylesheet" href="./css/utilities.css" />
-    <link rel="stylesheet" href="./css/style.css" /> --}}
+    {{-- <link rel="stylesheet" href="./css/utilities.css" /> --}}
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <style>
         /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap'); */
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap');
@@ -944,82 +944,63 @@
     </style>
     <title>Satusks.id</title>
 </head>
-<body id="home">
+<body id=" home">
     <main>
-        <!-- scorecard -->
-        <section class="post scorecard">
-            <h1>
-                Scorecard memilih jurusan kuliah yang tepat, Navigating Your Future
-                Workshop Desember 2023
-            </h1>
-            <!-- <p class="meta">
-          <i class="fas fa-user"></i> Posted by <strong> Jane Doe</strong> | 19
-          Desember 2023
-        </p> -->
-            <p>
-                Halo, terima kasih telah menaruh minat untuk mengikuti Workshop
-                Navigating Your Future, Workshop untuk menentukan jurusan dan kampus.
-                Berikut merupakan score card untuk menilai "Seberapa siap kamu untuk
-                menentukan jurusan dan kampus yang akan dituju". Terdapat 23
-                pertanyaan pilihan ganda (Ya/Tidak) yang terbagi ke dalam 5 (lima)
-                aspek yang akan kamu isi di scorecard ini. Aspek tersebut yaitu:
-            </p>
-            <div class="list">
-                <ul class="list-show">
-                    <li>
-                        <p>Aspek minat dan bakat</p>
-                    </li>
-                    <li>
-                        <p>Aspek akademik</p>
-                    </li>
-                    <li>
-                        <p>Aspek non-akademik</p>
-                    </li>
-                    <li>
-                        <p>Aspek prospek masa depan</p>
-                    </li>
-                    <li>
-                        <p>Aspek orang tua</p>
-                    </li>
-                </ul>
+        {{-- not render on pdf --}}
+        {{-- <header class="hero blog">
+            <!-- jumbtron -->
+            <div class="content">
+                <h1>Scorecard Result</h1>
             </div>
+        </header> --}}
+        <!-- scorecard -->
+        <section class="post scorecard" style="padding:0px 30px;">
+            <h1>
+                Scorecard Result
+            </h1>
+            <p class="meta">
+                <i class="fas fa-user"></i> <strong> {{ $name }}</strong> | tanggal dibuat : {{$date}}
+            </p>
+            <div class="scorecard-chart">
+                <img src="data:image/png;base64,{{ base64_encode(file_get_contents($chart))}}" alt="" style="height:400px;width:600px;" />
+            </div>
+            <p>
+                Halo, terima kasih telah mengisi score card untuk menilai "Seberapa siap kamu untuk
+                menentukan jurusan dan kampus yang akan dituju".Scorecard ini terbagi ke dalam 5 (lima)
+                aspek yang telah kamu isi di scorecard ini.
+            </p>
+
+
             <p>
                 Berdasarkan pengalaman mendampingi calon mahasiswa,
                 pertanyaan-pertanyaan ini merupakan pertanyaan yang penting untuk
                 dijawab saat kamu menentukan jurusan dan kampus saat nanti kuliah.
             </p>
-            <p>
-                Sebelumnya, kamu diminta untuk mengisi data diri agar hasil score card
-                dapat lebih relevan. Setelah score card ini diisi, kamu akan
-                mendapatkan secara langsung hasil score card ini melalui email. Skor
-                maksimal adalah 23/23 yang memberikan indikasi bahwa kamu cukup
-                memiliki pengetahuan mengenai jurusan/kampus yang hendak dituju.
-            </p>
-            <p>
+            {{-- <p>
                 Selain itu, kamu akan mendapatkan tambahan uraian analisa dari hasil
                 score card ini melalui WA/email. Setelah itu instruksi pembayaran dan
                 workshop akan kamu peroleh.
-            </p>
+            </p> --}}
             <p>Terima kasih</p>
             <p>Pak Chris (081288985786), jika ada pertanyaan silahkan WA</p>
         </section>
-
-        <section id="contact" class="contact flex-columns">
+        {{-- chartjs not render --}}
+        {{-- <section id="results" class="contact flex-columns">
             <div class="column">
-                <div class="column-2">
-                    <img src="data:image/png;base64,{{ base64_encode(file_get_contents($chart))}}" alt="" />
+                <div class="column-1">
+                    <div id="chartContainer"></div>
                 </div>
             </div>
-        </section>
+            </div>`
+        </section> --}}
+
+
     </main>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
     <script>
-        const optResults = {
-            {
-                json_encode($results)
-            }
-        }
+    {{-- not render on pdf --}}
+    {{-- const optResults = @json($results)
 
         window.onload = function() {
             const chartScore = document.getElementById('chartContainer')
@@ -1051,7 +1032,7 @@
             , }
             //return options
             $('#chartContainer').CanvasJSChart(options)
-        }
+        } --}}
 
     </script>
 </body>

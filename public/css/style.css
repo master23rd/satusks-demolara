@@ -64,6 +64,17 @@ img {
   z-index: 11;
 }
 
+.navbar h3 > a {
+  color: #fff;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar h3 > a:hover {
+  opacity: 0.7 !important;
+  border-bottom: none !important;
+}
+
 .navbar a {
   color: #fff;
   padding: 10px 20px;
@@ -88,6 +99,7 @@ img {
 .navbar .logo {
   font-weight: 400;
   margin-right: 50px;
+  padding-bottom: 10px;
 }
 
 /* Header of Jumbotron */
@@ -217,6 +229,10 @@ img {
   /* #c9d2ef, #6680b3, #8196d9 */
   /* background: url('../images/home/showcase.jpg') no-repeat center center/cover; */
   /* background: #8196d9; */
+}
+
+#motivation-image {
+  width: 80%;
 }
 
 /* .footer {
@@ -575,6 +591,18 @@ button:hover {
   /* margin-top: 40px; */
 }
 
+.post .scorecard-chart {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.post .scorecard-chart img {
+  width: 100%;
+  display: block;
+  /* margin: 0 auto 30px; */
+  object-fit: contain;
+}
+
 /* mobile */
 @media (max-width: 768px) {
   .navbar {
@@ -606,6 +634,10 @@ button:hover {
     padding-top: 80px;
   }
 
+  .hero.blog {
+    height: 50vh;
+  }
+
   #subscribe {
     height: 350px;
   }
@@ -615,6 +647,10 @@ button:hover {
     margin: 0 auto;
     width: 50%;
     object-fit: cover;
+  }
+
+  #motivation-image {
+    width: 50%;
   }
 
   .subscribe .row,
@@ -643,6 +679,14 @@ button:hover {
 
   .post h1 {
     width: 100%;
+  }
+
+  .post.blog {
+    padding: 50px 30px;
+  }
+
+  .post img {
+    height: auto;
   }
 }
 
