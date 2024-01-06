@@ -285,3 +285,33 @@
 .flex-grid .column img {
   border-radius: 5px;
 }
+
+blockquote {
+  padding: 10px;
+  margin-left: 60px;
+  position: relative;
+  quotes: '\210C''\210D';
+  font-size: 10px;
+  line-height: 64px;
+  width: 320px;
+}
+
+blockquote::before,
+blockquote::after {
+  font-size: 20px;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: -1;
+}
+
+blockquote::before {
+  content: url('.././images/asset/Putih\ -\ Submark\ 2.png');
+  left: -60px;
+  right: 110px;
+}
+
+blockquote::after {
+  content: url('.././images/asset/Putih\ -\ Submark\ 2.png');
+  margin-top: 170px;
+}

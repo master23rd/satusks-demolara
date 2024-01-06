@@ -54,6 +54,11 @@
                             kurikulum, prospek serta perkiraan biaya kuliah . Cukup dengan
                             90 detik waktu pengisian dan kamu akan tahu skornya.
                         </p>
+                        {{-- <blockquote>
+                            Scorecard ini menilai pengetahuan kamu mengenai minat & bakat,
+                            kurikulum, prospek serta perkiraan biaya kuliah . Cukup dengan
+                            90 detik waktu pengisian dan kamu akan tahu skornya.
+                        </blockquote> --}}
                         <a href="{{route('scorecard')}}" class="btn btn-primary">
                             <i class="fas fa-chevron"></i> Isi Scorecard >
                         </a>
