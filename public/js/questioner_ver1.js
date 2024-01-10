@@ -169,7 +169,7 @@
     setTimeout(function () {
       // questionareContainer.style.display = 'none'
       questionareContainer.classList.add('pre-animation')
-      quizContainer.classList.add('hide')
+
       // Smooth Scrolling
 
       $('html, body').animate(
@@ -181,6 +181,7 @@
 
       introResult.classList.remove('pre-animation')
       resultsContainer.classList.remove('pre-animation')
+      questionareContainer.classList.add('hide')
       introResult.innerHTML = renderScore
       resultsContainer.innerHTML = renderContact
       pieChart(results)
