@@ -264,36 +264,36 @@
                     <iframe src="https://drive.google.com/file/d/13_0ddHIWCCg_sdBM7V_Ga911rz21GK2y/preview?controls=0" width="98%" height="500" autoplay="1" frameborder="0" controls="0" autoplay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 20px"></iframe>
                 </div>
                 <div class="column">
-                    <a href="https://drive.google.com/uc?export=view&id=1GKyFXFMHlpoe0mwEMI9W2QC5IAApT44R" data-lightbox="cases" data-title="testing" alt="">
-                        <img src=" https://drive.google.com/uc?export=view&id=1GKyFXFMHlpoe0mwEMI9W2QC5IAApT44R" alt="" />
+                    <a href="{{ asset('images/galery/1.JPG')}}" data-lightbox="cases" data-title="Langsung dibimbing oleh profesional " alt="">
+                        <img src="{{ asset('images/galery/1.JPG')}}" alt="" />
                     </a>
-                    <a href="https://drive.google.com/uc?export=view&id=1qzc2oxNVP9oCsnkT55OB-UXYhVnVqwc_" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1qzc2oxNVP9oCsnkT55OB-UXYhVnVqwc_" alt="" />
+                    <a href="{{ asset('images/galery/2.JPG')}}" data-lightbox="cases" data-title="diskusi dan interaksi bersama" alt="">
+                        <img src="{{ asset('images/galery/2.JPG')}}" alt="" />
                     </a>
-                    <a href="https://drive.google.com/uc?export=view&id=1XgY69Nwu_T-HGoDSORCz4l-GSz3G4pZK" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1XgY69Nwu_T-HGoDSORCz4l-GSz3G4pZK" alt="" />
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="https://drive.google.com/uc?export=view&id=12bb4f1Q79EqSb80fHmQQjzaYVKGUIoCT" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=12bb4f1Q79EqSb80fHmQQjzaYVKGUIoCT" alt="" />
-                    </a>
-                    <a href="https://drive.google.com/uc?export=view&id=1quQ5iyTUAHa13J2I3QJQZdP8b0FIK3Q3" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1quQ5iyTUAHa13J2I3QJQZdP8b0FIK3Q3" alt="" />
-                    </a>
-                    <a href="https://drive.google.com/uc?export=view&id=1jvkwLsrY1yeZMiFaIpvBBHMVWs42gW0y" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1jvkwLsrY1yeZMiFaIpvBBHMVWs42gW0y" alt="" />
+                    <a href="{{ asset('images/galery/3.JPG')}}" data-lightbox="cases" data-title="bimbingan konseling" alt="">
+                        <img src="{{ asset('images/galery/3.JPG')}}" alt="" />
                     </a>
                 </div>
                 <div class="column">
-                    <a href="https://drive.google.com/uc?export=view&id=1pewA3MaZOX9DWG-WBh3gbGoDUraz6wL1" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1pewA3MaZOX9DWG-WBh3gbGoDUraz6wL1" alt="" />
+                    <a href="{{ asset('images/galery/4.JPG')}}" data-lightbox="cases" data-title="ciptakan suasana terbaik" alt="">
+                        <img src="{{ asset('images/galery/4.JPG')}}" alt="" />
                     </a>
-                    <a href="https://drive.google.com/uc?export=view&id=1P0tdfnVU-nf-IJ3i0OcyXCL7_nIe7OUN" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1P0tdfnVU-nf-IJ3i0OcyXCL7_nIe7OUN" alt="" />
+                    <a href="{{ asset('images/galery/5.JPG')}}" data-lightbox="cases" data-title="mempersiapkan akademik" alt="">
+                        <img src="{{ asset('images/galery/5.JPG')}}" alt="" />
                     </a>
-                    <a href="https://drive.google.com/uc?export=view&id=1Yo0UYIIq86XGli2lCMN6JekpULqUPJgA" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="https://drive.google.com/uc?export=view&id=1Yo0UYIIq86XGli2lCMN6JekpULqUPJgA" alt="" />
+                    <a href="{{ asset('images/galery/6.JPG')}}" data-lightbox="cases" data-title="aktivitas satusks.id" alt="">
+                        <img src="{{ asset('images/galery/6.JPG')}}" alt="" />
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="{{ asset('images/galery/7.JPG')}}" data-lightbox="cases" data-title="aktivitas satusks.id" alt="">
+                        <img src="{{ asset('images/galery/7.JPG')}}" alt="" />
+                    </a>
+                    <a href="{{ asset('images/galery/8.JPG')}}" data-lightbox="cases" data-title="aktivitas satusks.id" alt="">
+                        <img src="{{ asset('images/galery/8.JPG')}}" alt="" />
+                    </a>
+                    <a href="{{ asset('images/galery/9.JPG')}}" data-lightbox="cases" data-title="aktivitas satusks.id" alt="">
+                        <img src="{{ asset('images/galery/9.JPG')}}" alt="" />
                     </a>
                 </div>
             </div>
