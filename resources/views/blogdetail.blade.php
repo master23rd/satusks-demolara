@@ -71,15 +71,15 @@
             </p>
         </section>
     </main>
-    <footer class="footer bg-primary">
+    <footer class="footer bg-primary" id="footer">
         <div class="row">
             <div class="column column-1">
                 <h3>Solutions</h3>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active">Campus Academy</a></li>
-                        <li><a href="#testimony">Career Seminar</a></li>
-                        <li><a href="#testimony">Parent Meeting</a></li>
+                        <li><a href="#" class="active">Campus Academy</a></li>
+                        <li><a href="#">Career Seminar</a></li>
+                        <li><a href="#">Parent Meeting</a></li>
                     </ul>
                 </nav>
             </div>
@@ -87,9 +87,9 @@
                 <h3>Explore</h3>
                 <nav>
                     <ul>
-                        <li><a href="#galery">Scorecard</a></li>
-                        <li><a href="scorecard.html">Zoom Schedule</a></li>
-                        <li><a href="#contact">Coaching</a></li>
+                        <li><a href="{{route('scorecard')}}">Scorecard</a></li>
+                        <li><a href="#">Zoom Schedule</a></li>
+                        <li><a href="#">Coaching</a></li>
                     </ul>
                 </nav>
             </div>
@@ -100,21 +100,21 @@
                 <h3>satusks.id</h3>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active">Jesica</a></li>
-                        <li><a href="#testimony"> +62 895 3391 41000</a></li>
+                        <li><a href="#" class="active">Jesica</a></li>
+                        <li><a href="#"> +62 895 3391 41000</a></li>
                     </ul>
                 </nav>
 
-                <p>Copyright &copy; 2023 - Satusks.id</p>
+                <p>Copyright &copy; 2024 - Satusks.id</p>
             </div>
         </div>
         <div class="row contact-us">
             <div class="social">
                 <p>Contact Us</p>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/christian-fredy-naa-220786/?originalSubdomain=id"><i class="fab fa-linkedin fa-2x"></i></a>
                 <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.instagram.com/satusks.id/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://open.spotify.com/show/7afBj7FAfds0XOmqQfLIRE?si=81ee9cfe19c24c93"><i class="fab fa-spotify fa-2x"></i></a>
             </div>
             <div class="barcode">
                 <img src="./images/asset/barcode.png" alt="" />

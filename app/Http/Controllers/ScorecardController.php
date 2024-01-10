@@ -38,10 +38,10 @@ class ScorecardController extends Controller
         $options = '{
             "type": "outlabeledPie",
             "data": {
-              "labels": ["Minat & Bakat", "Akademik", "Non-akademik", "Prospek", "Orang Tua"],
+              "labels": ["Minat & Bakat", "Jurusan & Kampus", "Biaya & Jadwal Akademik"],
               "datasets": [{
                   "backgroundColor": ["#FF3784", "#36A2EB", "#4BC0C0", "#F77825", "#9966FF"],
-                  "data": ['.$results[0].','.$results[1].',1,2,1]
+                  "data": ['.$results[0].','.$results[1].','.$results[2].']
               }]
             },
             "options": {
@@ -58,8 +58,8 @@ class ScorecardController extends Controller
                   "stretch": 20,
                   "font": {
                     "resizable": true,
-                    "minSize": 12,
-                    "maxSize": 15
+                    "minSize": 6,
+                    "maxSize": 10
                   }
                 }
               }
@@ -137,17 +137,20 @@ class ScorecardController extends Controller
         // }"; 
          
         $chartUrl = 'https://quickchart.io/chart?w=300&h=200&c=' . urlencode($options);
+        $fileDate = Carbon::now()->locale('id')->isoFormat('DMMMYY_HHmmss');
         $date = Carbon::now()->locale('id');
         $date->settings(['formatFunction' => 'translatedFormat']);
         $date->setTimezone('Asia/Jakarta')->format('l, j F Y ; h:i');
         
         $pdf = PDF::loadview('scorecard_pdf', ['results' => $results, 'chart' => $chartUrl, 'name'=>$request->name, 'date' => $date])->setOptions(['defaultFont' => 'sans-serif']);
-        $filename = time().'.'.'pdf';
+        // $filename = time().'.'.'pdf';
+        $filename = $request->name .'_'. $fileDate.'.'.'pdf';
         $pdf->save(public_path(). '/storage/pdf/scored/' . $filename); //storage_path('/pdf/scored/'. $filename));
 
         Scorecard::create([
             'name' => $request->name,
             'phone_number' => $request->phoneNumber,
+            'email' => $request->email,
             'score_pdf' => $filename,
         ]);
         
@@ -156,7 +159,7 @@ class ScorecardController extends Controller
     // private
     public function index(Request $request)
     {
-        return view('admin.scorecard.index');
+      return view('admin.scorecard.index');
     }
 
     public function scoreList(Request $request)

@@ -15,6 +15,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
+                                <th>Email</th>
                                 <th>Phone Number</th>
                                 <th>Created At</th>
                                 <th>Score PDF</th>

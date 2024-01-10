@@ -1,7 +1,7 @@
 ;(function () {
-  function buildQuiz(name, contact) {
-    console.log(name)
-    console.log(contact)
+  function buildQuiz(name, contact, email) {
+    // console.log(name)
+    // console.log(contact)
     // variable to store the HTML output
     const questions = []
 
@@ -117,6 +117,7 @@
         results: results,
         name: name,
         phoneNumber: phoneNumber,
+        email: email,
       },
       xhrFields: {
         responseType: 'blob',
@@ -142,9 +143,8 @@
       <p>
         Sebelumnya, kamu diminta untuk mengisi data diri agar hasil score card
         dapat lebih relevan. Setelah score card ini diisi, kamu akan
-        mendapatkan secara langsung hasil score card ini melalui email. Skor
-        maksimal adalah 23/23 yang memberikan indikasi bahwa kamu cukup
-        memiliki pengetahuan mengenai jurusan/kampus yang hendak dituju.
+        mendapatkan secara langsung hasil score card ini melalui email. Hasil Skor
+        yang kamu dapat akan memberikan indikasi sebarapa siap dan cukup kamu dalam mempersiapkan jurusan/kampus yang hendak dituju.
       </p>
       <p>
         Selain itu, kamu akan mendapatkan tambahan uraian analisa dari hasil
@@ -208,7 +208,8 @@
           yValueFormatString: '#,##0.#' % '',
           dataPoints: [
             { label: 'Minat & Bakat', y: optResults[0] },
-            { label: 'Akademis', y: optResults[1] },
+            { label: 'Jurusan & Kampus', y: optResults[1] },
+            { label: 'Biaya, Jalur Masuk & Tanggal', y: optResults[2] },
           ],
         },
       ],
@@ -232,7 +233,8 @@
       section: 'Minat & Bakat',
       questions: [
         {
-          question: 'Apa Hobi Kamu adalah membaca ?',
+          question:
+            '1.	Apakah Anda sudah menemukan jurusan yang benar-benar sesuai dengan minat dan bakat Anda?',
           answers: {
             a: 'Ya',
             b: 'Tidak',
@@ -240,36 +242,49 @@
           correctAnswer: 'a',
         },
         {
-          question: 'Apa Hobi Kamu adalah membaca ?',
+          question:
+            '2.	Apakah Anda telah melakukan riset/pencarian atau pengujian diri untuk memastikan bahwa minat Anda sejalan dengan jurusan yang dipilih?',
           answers: {
             a: 'Ya',
             b: 'Tidak',
           },
           correctAnswer: 'a',
         },
-        // {
-        //   question: 'Apa Hobi Kamu adalah membaca ?',
-        //   answers: {
-        //     a: 'Ya',
-        //     b: 'Tidak',
-        //   },
-        //   correctAnswer: 'a',
-        // },
-        // {
-        //   question: 'Apa Hobi Kamu adalah membaca ?',
-        //   answers: {
-        //     a: 'Ya',
-        //     b: 'Tidak',
-        //   },
-        //   correctAnswer: 'a',
-        // },
+        {
+          question:
+            '3.	Apakah Anda sudah memiliki pengalaman atau telah terlibat dalam kegiatan yang berkaitan dengan jurusan yang diminati?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '4.	Apakah Anda sudah berbicara dengan profesional atau pakar di bidang yang Anda minati untuk mendapatkan gambaran yang lebih baik tentang jurusan tersebut?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '5.	Apakah Anda telah mempertimbangkan bagaimana minat dan bakat Anda akan berkontribusi terhadap kesuksesan Anda di jurusan tersebut dan dalam karir masa depan?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
       ],
     },
     {
-      section: 'Akademis',
+      section: 'Informasi Tentang Tujuan Jurusan dan Kampus',
       questions: [
         {
-          question: 'Apa kamu pernah menjadi juara kelas ?',
+          question:
+            '1.	Apakah Anda sudah mengetahui prospek karir dari jurusan pilihan Anda?',
           answers: {
             a: 'Ya',
             b: 'Tidak',
@@ -277,43 +292,99 @@
           correctAnswer: 'a',
         },
         {
-          question: 'Apa kamu pernah menjadi juara kelas ?',
+          question:
+            '2.	Apakah Anda telah meneliti akreditasi dan reputasi jurusan serta kampus tersebut?',
           answers: {
             a: 'Ya',
             b: 'Tidak',
           },
           correctAnswer: 'a',
         },
-        // {
-        //   question: 'Apa kamu pernah menjadi juara kelas ?',
-        //   answers: {
-        //     a: 'Ya',
-        //     b: 'Tidak',
-        //   },
-        //   correctAnswer: 'a',
-        // },
-        // {
-        //   question: 'Apa kamu pernah menjadi juara kelas ?',
-        //   answers: {
-        //     a: 'Ya',
-        //     b: 'Tidak',
-        //   },
-        //   correctAnswer: 'a',
-        // },
-        // {
-        //   question: 'Apa kamu pernah menjadi juara kelas ?',
-        //   answers: {
-        //     a: 'Ya',
-        //     b: 'Tidak',
-        //   },
-        //   correctAnswer: 'a',
-        // },
+        {
+          question:
+            '3.	Apakah Anda sudah mengetahui fasilitas pendukung yang ditawarkan kampus untuk jurusan tersebut?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '4.	Apakah Anda telah mengunjungi kampus dan berbicara dengan dosen atau mahasiswa jurusan tersebut?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '5.	Apakah Anda sudah memahami visi, misi, dan nilai-nilai yang diusung oleh jurusan dan kampus tersebut?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+      ],
+    },
+    {
+      section:
+        'Biaya serta Jalur Masuk dan Tanggal-tanggal Penting Seleksi Masuk Perguruan Tinggi',
+      questions: [
+        {
+          question:
+            '1.	Apakah Anda sudah mengetahui estimasi biaya kuliah dan biaya hidup selama menempuh pendidikan di jurusan dan kampus tersebut?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '2.	Apakah Anda sudah mengetahui berbagai jalur masuk yang tersedia di kampus pilihan Anda?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '3.	Apakah Anda telah meneliti tentang beasiswa atau bantuan keuangan yang ditawarkan oleh kampus atau lembaga lain?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '4.	Apakah Anda sudah mencatat tanggal-tanggal penting terkait pendaftaran dan seleksi masuk?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
+        {
+          question:
+            '5.	Apakah Anda sudah mengetahui dokumen-dokumen yang dibutuhkan untuk proses pendaftaran dan seleksi masuk?',
+          answers: {
+            a: 'Ya',
+            b: 'Tidak',
+          },
+          correctAnswer: 'a',
+        },
       ],
     },
   ]
 
   let name
   let phoneNumber
+  let email
 
   //   console.log(quizContainer.innerHTML)
 
@@ -321,11 +392,12 @@
     e.preventDefault()
     name = document.getElementById('name').value
     phoneNumber = document.getElementById('wa_number').value
+    email = document.getElementById('email').value
     // Kick things off
     setTimeout(function () {
       contactResult.classList.add('render-animation')
       welcome.classList.add('render-animation')
-      buildQuiz(name, phoneNumber)
+      buildQuiz(name, phoneNumber, email)
       submitButton.style.display = 'inline-block'
       // introQuiz.style.display = 'block'
       $('html, body').animate(

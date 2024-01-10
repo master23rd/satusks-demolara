@@ -9,6 +9,6 @@ class Scorecard extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'phone_number', 'score_pdf'];
+    protected $fillable = ['name', 'phone_number', 'score_pdf','email'];
 
 }

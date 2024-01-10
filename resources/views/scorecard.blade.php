@@ -27,7 +27,7 @@
         <nav>
             <ul>
                 <li><a href="{{route('home')}}">Home</a></li>
-                <li><a href="{{route('scorecard')}}">Scorecard</a></li>
+                <li><a href="{{route('scorecard')}}" class="active">Scorecard</a></li>
             </ul>
         </nav>
     </div>
@@ -45,43 +45,29 @@
     <main>
         <!-- scorecard -->
         <section id="welcome" class="post scorecard">
-            <h1>
+            {{-- <h1>
                 Scorecard memilih jurusan kuliah yang tepat, Navigating Your Future
                 Workshop Desember 2023
-            </h1>
+            </h1> --}}
             <p>
-                Halo, terima kasih telah menaruh minat untuk mengikuti Workshop
-                Navigating Your Future, Workshop untuk menentukan jurusan dan kampus.
-                Berikut merupakan score card untuk menilai "Seberapa siap kamu untuk
-                menentukan jurusan dan kampus yang akan dituju". Terdapat 23
-                pertanyaan pilihan ganda (Ya/Tidak) yang terbagi ke dalam 5 (lima)
-                aspek yang akan kamu isi di scorecard ini. Aspek tersebut yaitu:
+                Selamat datang di Scorecard Pemilihan Jurusan dan Kampus. Tujuan dari scorecard ini adalah untuk membantu Anda, para siswa SMA, dalam mengevaluasi sejauh mana pemahaman dan kesiapan Anda dalam memilih jurusan dan kampus yang tepat. Melalui serangkaian pertanyaan ya/tidak, scorecard ini akan mengukur pengetahuan dan persiapan Anda dalam tiga aspek krusial:
             </p>
             <div class="list">
                 <ul class="list-show">
                     <li>
-                        <p>Aspek minat dan bakat</p>
+                        <p>Minat dan Bakat: Memahami seberapa baik jurusan yang dipilih sesuai dengan minat dan bakat pribadi Anda.</p>
                     </li>
                     <li>
-                        <p>Aspek akademik</p>
+                        <p>Informasi tentang Jurusan dan Kampus: Menilai tingkat informasi yang Anda miliki tentang tujuan jurusan, fasilitas, prospek karir, serta reputasi kampus yang diminati.</p>
                     </li>
                     <li>
-                        <p>Aspek non-akademik</p>
-                    </li>
-                    <li>
-                        <p>Aspek prospek masa depan</p>
-                    </li>
-                    <li>
-                        <p>Aspek orang tua</p>
+                        <p>Biaya, Jalur Masuk, dan Tanggal Penting: Menilai kesiapan Anda dalam hal pembiayaan, mengetahui jalur masuk yang tersedia, dan pengetahuan Anda akan tanggal-tanggal penting dalam proses seleksi masuk perguruan tinggi.</p>
                     </li>
                 </ul>
             </div>
             <p>
-                Berdasarkan pengalaman mendampingi calon mahasiswa,
-                pertanyaan-pertanyaan ini merupakan pertanyaan yang penting untuk
-                dijawab saat kamu menentukan jurusan dan kampus saat nanti kuliah.
+                Dengan menjawab pertanyaan-pertanyaan ini, Anda akan mendapatkan gambaran yang lebih jelas tentang seberapa siap Anda dalam mengambil langkah penting ini menuju masa depan Anda.
             </p>
-            <p>Sudah siap memulai perjalanan akademik mu ? yuk isi kontak mu terlebih dahulu.</p>
         </section>
 
         <section id="contact" class="contact flex-columns">
@@ -92,6 +78,10 @@
                         <div class="form-control">
                             <label for="name">Nama</label>
                             <input type="text" name="name" id="name" placeholder="masukan nama" class="solid" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="masukan email" class="solid" required />
                         </div>
                         <div class="form-control">
                             <label for="phone">Nomor WA (opsional) untuk dikirimkan hasil score card yang
@@ -117,15 +107,15 @@
         <section id="scorecard" class="post scorecard"></section>
 
     </main>
-    <footer class="footer bg-primary">
+    <footer class="footer bg-primary" id="footer">
         <div class="row">
             <div class="column column-1">
                 <h3>Solutions</h3>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active">Campus Academy</a></li>
-                        <li><a href="#testimony">Career Seminar</a></li>
-                        <li><a href="#testimony">Parent Meeting</a></li>
+                        <li><a href="#" class="active">Campus Academy</a></li>
+                        <li><a href="#">Career Seminar</a></li>
+                        <li><a href="#">Parent Meeting</a></li>
                     </ul>
                 </nav>
             </div>
@@ -133,9 +123,9 @@
                 <h3>Explore</h3>
                 <nav>
                     <ul>
-                        <li><a href="#galery">Scorecard</a></li>
-                        <li><a href="scorecard.html">Zoom Schedule</a></li>
-                        <li><a href="#contact">Coaching</a></li>
+                        <li><a href="{{route('scorecard')}}">Scorecard</a></li>
+                        <li><a href="#">Zoom Schedule</a></li>
+                        <li><a href="#">Coaching</a></li>
                     </ul>
                 </nav>
             </div>
@@ -146,21 +136,21 @@
                 <h3>satusks.id</h3>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active">Jesica</a></li>
-                        <li><a href="#testimony"> +62 895 3391 41000</a></li>
+                        <li><a href="#" class="active">Jesica</a></li>
+                        <li><a href="#"> +62 895 3391 41000</a></li>
                     </ul>
                 </nav>
 
-                <p>Copyright &copy; 2023 - Satusks.id</p>
+                <p>Copyright &copy; 2024 - Satusks.id</p>
             </div>
         </div>
         <div class="row contact-us">
             <div class="social">
                 <p>Contact Us</p>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/christian-fredy-naa-220786/?originalSubdomain=id"><i class="fab fa-linkedin fa-2x"></i></a>
                 <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.instagram.com/satusks.id/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://open.spotify.com/show/7afBj7FAfds0XOmqQfLIRE?si=81ee9cfe19c24c93"><i class="fab fa-spotify fa-2x"></i></a>
             </div>
             <div class="barcode">
                 <img src="./images/asset/barcode.png" alt="" />

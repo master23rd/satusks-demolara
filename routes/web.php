@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScorecardController;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,13 @@ use App\Http\Controllers\ScorecardController;
 Route::get('/',function(){
     return view('landingpage');
 })->name('home');
+
+//test filename
+Route::get('/filename-tester', function(){
+    $filename = time().'.'.'pdf';
+    dd($filename);
+});
+
 // blog
 Route::get('/artikel-test', function(){
     return view('blogdetail');

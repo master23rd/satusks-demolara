@@ -31,8 +31,8 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#testimony">Testimony</a></li>
                 <li><a href="#galery">Galery</a></li>
-                <li><a href="{{route('scorecard')}}">Scorecard</a></li>
                 <li><a href="#footer">Kontak</a></li>
+                <li><a href="{{route('scorecard')}}">Scorecard</a></li>
             </ul>
         </nav>
     </div>
@@ -52,7 +52,7 @@
                         <p>
                             Scorecard ini menilai pengetahuan kamu mengenai minat & bakat,
                             kurikulum, prospek serta perkiraan biaya kuliah . Cukup dengan
-                            90 detik waktu pengisian dan kamu akan tahu skornya.
+                            2 - 5 menit waktu pengisian dan kamu akan tahu skornya.
                         </p>
                         {{-- <blockquote>
                             Scorecard ini menilai pengetahuan kamu mengenai minat & bakat,
@@ -146,6 +146,9 @@
                                     Setiap kamis 19-20 WIB, Webinar gratis membahas jurusan,
                                     informasi program “Navigating Your Future”
                                 </p>
+                                <a href="https://bit.ly/prw-deepdive24" class="btn btn-highlight">
+                                    <i class="fas fa-chevron"></i> Lihat Webinar
+                                </a>
                             </div>
                             <div class="item item-card">
                                 <div class="row item-header">
@@ -155,25 +158,25 @@
                                     </div>
                                 </div>
                                 <p>Obrolan memilih jurusan dan kehidupan sebagai mahasiswa</p>
-                                <a href="#" class="btn btn-highlight">
+                                <a href="https://open.spotify.com/show/7afBj7FAfds0XOmqQfLIRE?si=81ee9cfe19c24c93" class="btn btn-highlight">
                                     <i class="fas fa-chevron"></i> Dengar Spotify
                                 </a>
                             </div>
                             <div class="item item-card">
                                 <div class="row item-header">
-                                    <img src="./images/asset/Group 784.png" alt="" />
+                                    <img src="./images/asset/Group.png" alt="" />
                                     <div class="item-title">
                                         <h3>Video kelas on-demand</h3>
                                     </div>
                                 </div>
                                 <p>Video kelas on-demand</p>
-                                <a href="#" class="btn btn-highlight">
+                                <a href="https://kelas-christianfredynaa-com.mayar.link/course/navigating-online-class" class="btn btn-highlight">
                                     <i class="fas fa-chevron"></i> Video On Demand
                                 </a>
                             </div>
                             <div class="item item-card">
                                 <div class="row item-header">
-                                    <img src="./images/asset/Group.png" alt="" />
+                                    <img src="./images/asset/Group 784.png" alt="" />
                                     <div class="item-title">
                                         <h3>E-Book</h3>
                                     </div>
@@ -182,17 +185,16 @@
                                     Panduan orangtua dalam mendampingi anak memilih jurusan &
                                     kampus yang tepat
                                 </p>
-                                <a href="#" class="btn btn-highlight">
+                                <a href="https://kelas-christianfredynaa-com.mayar.link/catalog/ebook-panduan-orang-tua-navigating-your-future" class="btn btn-highlight">
                                     <i class="fas fa-chevron"></i> Unduh E-Book
                                 </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- hr secton -->
-                <!-- <div>
-            <hr class="middle-border" />
-          </div> -->
+                <hr class="middle-border" />
                 <div class="row">
                     <div class="column">
                         <div class="column-1">
@@ -201,14 +203,14 @@
                                 Premium program “Navigating Your Future” berupa workshop dan
                                 coaching.
                             </p>
-                            <div class="row pad-0 premium-btn">
+                            {{-- <div class="row pad-0 premium-btn">
                                 <a href="#" class="btn btn-outline">
                                     <i class="fas fa-chevron"></i> Link Workshop >
                                 </a>
                                 <a href="#" class="btn btn-outline">
                                     <i class="fas fa-chevron"></i> Link Coaching >
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="column">
@@ -224,6 +226,9 @@
                                     One-on-one coaching untuk siswa/i dan orang tuanya.
                                     Outputnya menentukan 2 (dua) pilihan jurusan dan kampus
                                 </p>
+                                <a href="https://forms.gle/KgziBorgq1QwpELP6" class="btn btn-highlight">
+                                    <i class="fas fa-chevron"></i> Link Coaching
+                                </a>
                             </div>
                             <div class="item item-card">
                                 <div class="row item-header">
@@ -236,6 +241,9 @@
                                     Workshop Siswa/i akan dipandu untuk eksplorasi potensi diri
                                     dan riset jurusan dan kampus tujuan
                                 </p>
+                                <a href="https://forms.gle/RmWdaFRq9ouEzvMr8" class="btn btn-highlight">
+                                    <i class="fas fa-chevron"></i> Link Workshop
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -245,58 +253,53 @@
         <!-- galery -->
         <section id="galery" class="galery flex-grid section-padding">
             <header class="section-header">
-                <!-- <h4>Galeri</h4>
-          <h2>Galeri</h2> -->
+
                 <h1>
                     <img src="./images/asset/Warna - Submark 3.png" alt="" style="width: 40px; margin-right: 10px" />Galeri
                 </h1>
-                <!-- <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            atque.
-          </p> -->
+
             </header>
             <div class="row">
                 <div class="main-column">
-                    <!-- <img src="images/cases/cases2.jpg" alt="" /> -->
-                    <iframe width="98%" height="415" src="https://www.youtube.com/embed/aPFuXz68uxk?si=zVyGh-enGui2zw43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 20px"></iframe>
+                    <iframe src="https://drive.google.com/file/d/13_0ddHIWCCg_sdBM7V_Ga911rz21GK2y/preview?controls=0" width="98%" height="500" autoplay="1" frameborder="0" controls="0" autoplay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 20px"></iframe>
                 </div>
                 <div class="column">
-                    <a href="images/cases/cases3.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases3.jpg" alt="" />
+                    <a href="https://drive.google.com/uc?export=view&id=1GKyFXFMHlpoe0mwEMI9W2QC5IAApT44R" data-lightbox="cases" data-title="testing" alt="">
+                        <img src=" https://drive.google.com/uc?export=view&id=1GKyFXFMHlpoe0mwEMI9W2QC5IAApT44R" alt="" />
                     </a>
-                    <a href="images/cases/cases4.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases4.jpg" alt="" />
+                    <a href="https://drive.google.com/uc?export=view&id=1qzc2oxNVP9oCsnkT55OB-UXYhVnVqwc_" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1qzc2oxNVP9oCsnkT55OB-UXYhVnVqwc_" alt="" />
                     </a>
-                    <a href="images/cases/cases4.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases4.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="images/cases/cases5.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases5.jpg" alt="" />
-                    </a>
-                    <a href="images/cases/cases6.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases6.jpg" alt="" />
-                    </a>
-                    <a href="images/cases/cases6.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases6.jpg" alt="" />
+                    <a href="https://drive.google.com/uc?export=view&id=1XgY69Nwu_T-HGoDSORCz4l-GSz3G4pZK" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1XgY69Nwu_T-HGoDSORCz4l-GSz3G4pZK" alt="" />
                     </a>
                 </div>
                 <div class="column">
-                    <a href="images/cases/cases7.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases7.jpg" alt="" />
+                    <a href="https://drive.google.com/uc?export=view&id=12bb4f1Q79EqSb80fHmQQjzaYVKGUIoCT" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=12bb4f1Q79EqSb80fHmQQjzaYVKGUIoCT" alt="" />
                     </a>
-                    <a href="images/cases/cases8.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases8.jpg" alt="" />
+                    <a href="https://drive.google.com/uc?export=view&id=1quQ5iyTUAHa13J2I3QJQZdP8b0FIK3Q3" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1quQ5iyTUAHa13J2I3QJQZdP8b0FIK3Q3" alt="" />
                     </a>
-                    <a href="images/cases/cases8.jpg" data-lightbox="cases" data-title="testing" alt="">
-                        <img src="images/cases/cases8.jpg" alt="" />
+                    <a href="https://drive.google.com/uc?export=view&id=1jvkwLsrY1yeZMiFaIpvBBHMVWs42gW0y" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1jvkwLsrY1yeZMiFaIpvBBHMVWs42gW0y" alt="" />
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://drive.google.com/uc?export=view&id=1pewA3MaZOX9DWG-WBh3gbGoDUraz6wL1" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1pewA3MaZOX9DWG-WBh3gbGoDUraz6wL1" alt="" />
+                    </a>
+                    <a href="https://drive.google.com/uc?export=view&id=1P0tdfnVU-nf-IJ3i0OcyXCL7_nIe7OUN" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1P0tdfnVU-nf-IJ3i0OcyXCL7_nIe7OUN" alt="" />
+                    </a>
+                    <a href="https://drive.google.com/uc?export=view&id=1Yo0UYIIq86XGli2lCMN6JekpULqUPJgA" data-lightbox="cases" data-title="testing" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1Yo0UYIIq86XGli2lCMN6JekpULqUPJgA" alt="" />
                     </a>
                 </div>
             </div>
         </section>
         <!-- article -->
-        <section id="article" class="article section-padding bg-half-reversed">
+        {{-- <section id="article" class="article section-padding bg-half-reversed">
             <header class="section-header">
                 <h1>
                     <img src="./images/asset/Warna - Submark 3.png" alt="" style="width: 40px; margin-right: 10px" />Artikel
@@ -312,51 +315,51 @@
                             eu nunc in justo tempus varius. Pellentesque id ultricies ex...
                         </p>
                         <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
-                            Read More >
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/cases/cases1.jpg" alt="" />
-                    <div class="content">
-                        <h2>Judul Artikel</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                            eu nunc in justo tempus varius. Pellentesque id ultricies ex...
-                        </p>
-                        <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
-                            Read More >
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/cases/cases1.jpg" alt="" />
-                    <div class="content">
-                        <h2>Judul Artikel</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                            eu nunc in justo tempus varius. Pellentesque id ultricies ex...
-                        </p>
-                        <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
-                            Read More >
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/cases/cases1.jpg" alt="" />
-                    <div class="content">
-                        <h2>Judul Artikel</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                            eu nunc in justo tempus varius. Pellentesque id ultricies ex...
-                        </p>
-                        <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
-                            Read More >
-                        </a>
-                    </div>
-                </div>
+        Read More >
+        </a>
+        </div>
+        </div>
+        <div class="card">
+            <img src="images/cases/cases1.jpg" alt="" />
+            <div class="content">
+                <h2>Judul Artikel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                    eu nunc in justo tempus varius. Pellentesque id ultricies ex...
+                </p>
+                <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
+                    Read More >
+                </a>
             </div>
-        </section>
+        </div>
+        <div class="card">
+            <img src="images/cases/cases1.jpg" alt="" />
+            <div class="content">
+                <h2>Judul Artikel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                    eu nunc in justo tempus varius. Pellentesque id ultricies ex...
+                </p>
+                <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
+                    Read More >
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/cases/cases1.jpg" alt="" />
+            <div class="content">
+                <h2>Judul Artikel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                    eu nunc in justo tempus varius. Pellentesque id ultricies ex...
+                </p>
+                <a href="{{ route('blog-detail')}}" class="btn-highlight-nonoutline">
+                    Read More >
+                </a>
+            </div>
+        </div>
+        </div>
+        </section> --}}
         <!-- message -->
         <section id="subscribe" class="subscribe flex-columns flex-reverse bg-primary">
             <div class="row-nopadding">
@@ -373,50 +376,6 @@
             </div>
         </section>
         <!-- contact -->
-        <!-- <section id="contact" class="contact flex-columns">
-        <div class="row">
-          <div class="column">
-            <div class="column-1">
-              <img src="images/home/contact.jpg" alt="" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="column-2 bg-light">
-              <h2>Request Callback</h2>
-              <form action="" class="callback-form">
-                <div class="form-control">
-                  <label for="name"></label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="enter name"
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="email"></label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="enter email"
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="phone"></label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="phone"
-                    placeholder="enter phone"
-                  />
-                </div>
-                <input type="submit" value="send" id="submit" class="btn" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </section> -->
     </main>
     <footer class="footer bg-primary" id="footer">
         <div class="row">
@@ -424,9 +383,9 @@
                 <h3>Solutions</h3>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active">Campus Academy</a></li>
-                        <li><a href="#testimony">Career Seminar</a></li>
-                        <li><a href="#testimony">Parent Meeting</a></li>
+                        <li><a href="#" class="active">Campus Academy</a></li>
+                        <li><a href="#">Career Seminar</a></li>
+                        <li><a href="#">Parent Meeting</a></li>
                     </ul>
                 </nav>
             </div>
@@ -447,21 +406,21 @@
                 <h3>satusks.id</h3>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active">Jesica</a></li>
-                        <li><a href="#testimony"> +62 895 3391 41000</a></li>
+                        <li><a href="#" class="active">Jesica</a></li>
+                        <li><a href="#"> +62 895 3391 41000</a></li>
                     </ul>
                 </nav>
 
-                <p>Copyright &copy; 2023 - Satusks.id</p>
+                <p>Copyright &copy; 2024 - Satusks.id</p>
             </div>
         </div>
         <div class="row contact-us">
             <div class="social">
                 <p>Contact Us</p>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/christian-fredy-naa-220786/?originalSubdomain=id"><i class="fab fa-linkedin fa-2x"></i></a>
                 <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.instagram.com/satusks.id/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://open.spotify.com/show/7afBj7FAfds0XOmqQfLIRE?si=81ee9cfe19c24c93"><i class="fab fa-spotify fa-2x"></i></a>
             </div>
             <div class="barcode">
                 <img src="./images/asset/barcode.png" alt="" />

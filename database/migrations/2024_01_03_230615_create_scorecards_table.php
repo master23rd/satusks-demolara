@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone_number');
             $table->string('score_pdf');
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }

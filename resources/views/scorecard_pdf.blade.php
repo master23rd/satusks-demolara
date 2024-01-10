@@ -965,16 +965,25 @@
                 <img src="data:image/png;base64,{{ base64_encode(file_get_contents($chart))}}" alt="" style="height:400px;width:600px;" />
             </div>
             <p>
-                Halo, terima kasih telah mengisi score card untuk menilai "Seberapa siap kamu untuk
-                menentukan jurusan dan kampus yang akan dituju".Scorecard ini terbagi ke dalam 5 (lima)
-                aspek yang telah kamu isi di scorecard ini.
+                Terima kasih telah meluangkan waktu untuk mengisi scorecard ini. Hasil yang Anda peroleh akan memberikan gambaran tentang kesiapan dan pemahaman Anda dalam pemilihan jurusan dan kampus. Setiap jawaban 'Ya' pada pertanyaan bernilai 1 poin, sementara jawaban 'Tidak' bernilai 0 poin. Sehingga maksimal setiap aspek bernilai 5. Berikut adalah kriteria penilaian berdasarkan total poin yang Anda peroleh:
             </p>
-
+            <div class="list">
+                <ul class="list-show">
+                    <li>
+                        <p>1. Skor 0-2 (Rendah): Menunjukkan bahwa Anda mungkin perlu melakukan lebih banyak penelitian dan pertimbangan dalam memilih jurusan dan kampus. Mungkin ada beberapa aspek penting yang belum Anda pertimbangkan secara mendalam.</p>
+                    </li>
+                    <li>
+                        <p>2. Skor 3 (Cukup): Menandakan bahwa Anda telah memulai proses penelitian dan pertimbangan, tetapi masih ada ruang untuk meningkatkan pemahaman dan kesiapan Anda.</p>
+                    </li>
+                    <li>
+                        <p>3. Skor 4-5 (Tinggi): Mengindikasikan tingkat kesiapan dan pemahaman yang baik dalam memilih jurusan dan kampus, menunjukkan bahwa Anda telah melakukan persiapan yang cukup dalam mengambil keputusan ini.</p>
+                    </li>
+                </ul>
+            </div>
 
             <p>
-                Berdasarkan pengalaman mendampingi calon mahasiswa,
-                pertanyaan-pertanyaan ini merupakan pertanyaan yang penting untuk
-                dijawab saat kamu menentukan jurusan dan kampus saat nanti kuliah.
+                Kami harap scorecard ini memberikan insight yang bermanfaat dan membantu Anda dalam melangkah lebih lanjut menuju pendidikan yang sesuai dengan minat, bakat, dan tujuan Anda.</p>
+            <p> Jika ingin melanjutkan pembicaraan tentang hasil Anda, silahkan untuk membuat janji temu secara daring (Zoom): https://calendly.com/christian-naa/video-call-with-pak-chris (45 menit free conversation)
             </p>
             {{-- <p>
                 Selain itu, kamu akan mendapatkan tambahan uraian analisa dari hasil
@@ -982,7 +991,7 @@
                 workshop akan kamu peroleh.
             </p> --}}
             <p>Terima kasih</p>
-            <p>Pak Chris (081288985786), jika ada pertanyaan silahkan WA</p>
+            {{-- <p>Pak Chris (081288985786), jika ada pertanyaan silahkan WA</p> --}}
         </section>
         {{-- chartjs not render --}}
         {{-- <section id="results" class="contact flex-columns">

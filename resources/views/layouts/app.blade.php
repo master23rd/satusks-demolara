@@ -60,6 +60,10 @@
                         , name: 'name'
                     }
                     , {
+                        data: 'email'
+                        , name: 'email'
+                    }
+                    , {
                         data: 'phone_number'
                         , name: 'phone_number'
                     }
