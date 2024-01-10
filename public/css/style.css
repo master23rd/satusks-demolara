@@ -732,7 +732,7 @@ button:hover {
     object-fit: cover;
   }
 
-  .flex-columns p {
+  .content.flex-columns p {
     height: auto;
   }
 
