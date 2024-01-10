@@ -153,7 +153,7 @@
                 <a href="https://open.spotify.com/show/7afBj7FAfds0XOmqQfLIRE?si=81ee9cfe19c24c93"><i class="fab fa-spotify fa-2x"></i></a>
             </div>
             <div class="barcode">
-                <img src="./images/asset/barcode.png" alt="" />
+                <img src="{{asset('images/asset/Group 787.png')}}" alt="" />
             </div>
         </div>
     </footer>
