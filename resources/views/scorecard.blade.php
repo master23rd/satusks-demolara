@@ -148,7 +148,7 @@
             <div class="social">
                 <p>Contact Us</p>
                 <a href="https://www.linkedin.com/in/christian-fredy-naa-220786/?originalSubdomain=id"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://m.youtube.com/channel/UC9Br9TYtSIXaB3PXELVxkNg"><i class="fab fa-youtube fa-2x"></i></a>
                 <a href="https://www.instagram.com/satusks.id/"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://open.spotify.com/show/7afBj7FAfds0XOmqQfLIRE?si=81ee9cfe19c24c93"><i class="fab fa-spotify fa-2x"></i></a>
             </div>
