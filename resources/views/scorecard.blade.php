@@ -34,7 +34,7 @@
     <header class="hero blog">
         <!-- jumbtron -->
         <div class="content">
-            <h1>Scorecard Questioner</h1>
+            <h1>Scorecard</h1>
             {{-- <p id="intro-quiz">
                 Scorecard ini menilai pengetahuan kamu mengenai minat & bakat,
                 kurikulum, prospek serta perkiraan biaya kuliah . Cukup dengan 90

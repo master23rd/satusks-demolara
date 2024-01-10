@@ -169,6 +169,7 @@
     setTimeout(function () {
       // questionareContainer.style.display = 'none'
       questionareContainer.classList.add('pre-animation')
+      quizContainer.classList.add('hide')
       // Smooth Scrolling
 
       $('html, body').animate(

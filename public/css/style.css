@@ -545,6 +545,7 @@ p {
   opacity: 0;
   max-height: 0;
   transition: all 1s;
+  display: none;
 }
 
 .questioner h1 {
@@ -605,6 +606,10 @@ button:hover {
   /* margin-top: 40px; */
 }
 
+.quiz.hide {
+  display: none;
+}
+
 .post .scorecard-chart {
   /* display: flex;
   justify-content: center; */
@@ -640,7 +645,8 @@ button:hover {
 
   .hero,
   .hero.scorecard {
-    height: 190vh;
+    /* height: 190vh; */
+    height: auto;
     display: flex;
     flex-direction: column;
     /* position: relative; */
@@ -707,8 +713,16 @@ button:hover {
     margin: 0 100px;
   }
 
-  .flex-columns .column-1 p {
+  .flex-columns.column-1 p {
     height: auto;
+  }
+
+  .callback-form input.solid {
+    width: 100%;
+  }
+
+  .callback-form label {
+    width: 100%;
   }
 }
 
@@ -716,5 +730,17 @@ button:hover {
   .subscribe img {
     width: 100%;
     object-fit: cover;
+  }
+
+  .flex-columns p {
+    height: auto;
+  }
+
+  .callback-form input.solid {
+    width: 100%;
+  }
+
+  .callback-form label {
+    width: 100%;
   }
 }
