@@ -713,7 +713,7 @@ button:hover {
     margin: 0 100px;
   }
 
-  .flex-columns.column-1 p {
+  .flex-columns .column-1 p {
     height: auto;
   }
 
