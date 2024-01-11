@@ -663,7 +663,8 @@ button:hover {
   }
 
   #subscribe {
-    height: 350px;
+    /* height: 350px; */
+    height: auto;
   }
 
   .subscribe img {
@@ -673,9 +674,9 @@ button:hover {
     object-fit: cover;
   }
 
-  #motivation-image {
+  /* #motivation-image {
     width: 50%;
-  }
+  } */
 
   .subscribe .row,
   .subscribe .column,
@@ -683,7 +684,7 @@ button:hover {
     padding: 10px;
   }
 
-  .subscribe .column .column-1-nopadding {
+  .subscribe .column:first-child {
     display: none;
   }
 
@@ -727,6 +728,15 @@ button:hover {
 
   .callback-form label {
     width: 100%;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .flex-columns.flex-reverse .row,
+  .flex-columns.flex-reverse .row-nopadding {
+    flex-direction: row-reverse;
   }
 }
 

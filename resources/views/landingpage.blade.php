@@ -261,7 +261,7 @@
             </header>
             <div class="row">
                 <div class="main-column">
-                    <iframe src="https://drive.google.com/file/d/13_0ddHIWCCg_sdBM7V_Ga911rz21GK2y/preview?controls=0" width="98%" height="500" autoplay="1" frameborder="0" controls="0" autoplay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 20px"></iframe>
+                    <iframe width="98%" height="500" src="https://www.youtube.com/embed/AnFWaWlxyV4?si=dtVe1jfpsc_k3R0-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 20px"></iframe>
                 </div>
                 <div class="column">
                     <a href="{{ asset('images/galery/1.JPG')}}" data-lightbox="cases" data-title="Langsung dibimbing oleh profesional " alt="">
